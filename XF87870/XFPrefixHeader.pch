@@ -1,0 +1,21 @@
+//
+//  XFPrefixHeader.pch
+//  XF87870
+//
+//  Created by xf on 2016/11/8.
+//  Copyright © 2016年 HappyNetwork. All rights reserved.
+//
+
+#ifndef XFPrefixHeader_pch
+#define XFPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "XFCommon.h"
+#import "WebImage.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "MWPhotoBrowser.h"
+#endif
+
+#endif 

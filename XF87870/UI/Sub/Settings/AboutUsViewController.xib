@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user_about" translatesAutoresizingMaskIntoConstraints="NO" id="35y-wG-RO7">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="UQd-lm-M75"/>
+                        <constraint firstAttribute="width" constant="72" id="pTu-or-OGZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc6-Sf-foc">
+                    <string key="text">87870成立于2013年，是国内目前最大的虚拟现实门户与用户平台，同时也是全球估值最高的虚拟现实垂直媒体。
+87870提供全面、专业的行业动态与资讯等媒体服务，面向企业用户的本地化、全球化、品牌推广等商业服务，以及面向专业市场的产业发展分析与数据报告。
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本：1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-ub-pr8">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kbw-ub-pr8" firstAttribute="centerX" secondItem="35y-wG-RO7" secondAttribute="centerX" id="22x-0N-UdY"/>
+                <constraint firstItem="35y-wG-RO7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="V22-UD-UFI"/>
+                <constraint firstItem="mc6-Sf-foc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="WU5-wa-3FD"/>
+                <constraint firstAttribute="trailing" secondItem="mc6-Sf-foc" secondAttribute="trailing" constant="30" id="XvT-nJ-rtc"/>
+                <constraint firstItem="mc6-Sf-foc" firstAttribute="top" secondItem="kbw-ub-pr8" secondAttribute="bottom" constant="36" id="aXN-84-dem"/>
+                <constraint firstItem="35y-wG-RO7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="j0Z-wX-XJD"/>
+                <constraint firstItem="kbw-ub-pr8" firstAttribute="top" secondItem="35y-wG-RO7" secondAttribute="bottom" constant="8" id="wgD-mB-75B"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-318" y="60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_user_about" width="72" height="62"/>
+    </resources>
+</document>

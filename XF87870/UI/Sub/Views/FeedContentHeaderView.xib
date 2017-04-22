@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedContentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh9-XU-dnf">
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来源：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qve-dV-OLV">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmo-Hy-GDC">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo9-be-PKg">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我自己" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U09-0I-Lvh">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-13-13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zho-Ss-S0a">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnv-ic-GSY">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-dd-Gv1">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="1uj-SW-wgR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yo9-be-PKg" firstAttribute="leading" secondItem="Cmo-Hy-GDC" secondAttribute="trailing" constant="16" id="2kJ-JQ-gX6"/>
+                <constraint firstItem="Cmo-Hy-GDC" firstAttribute="leading" secondItem="qve-dV-OLV" secondAttribute="trailing" id="7ji-26-CZu"/>
+                <constraint firstItem="qve-dV-OLV" firstAttribute="top" secondItem="Gh9-XU-dnf" secondAttribute="bottom" constant="16" id="COn-EA-kxF"/>
+                <constraint firstItem="Bnv-ic-GSY" firstAttribute="top" secondItem="Yo9-be-PKg" secondAttribute="bottom" constant="24" id="DT2-tA-WWf"/>
+                <constraint firstAttribute="trailing" secondItem="Gh9-XU-dnf" secondAttribute="trailing" constant="16" id="DyV-no-wM7"/>
+                <constraint firstAttribute="trailing" secondItem="Bnv-ic-GSY" secondAttribute="trailing" constant="16" id="EO8-ma-4kk"/>
+                <constraint firstAttribute="trailing" secondItem="nxt-dd-Gv1" secondAttribute="trailing" constant="16" id="F0b-zR-1E4"/>
+                <constraint firstItem="Zho-Ss-S0a" firstAttribute="leading" secondItem="U09-0I-Lvh" secondAttribute="trailing" constant="16" id="SXB-Fg-SFD"/>
+                <constraint firstItem="nxt-dd-Gv1" firstAttribute="top" secondItem="Bnv-ic-GSY" secondAttribute="bottom" constant="14" id="ZUm-nN-1Xz"/>
+                <constraint firstItem="Gh9-XU-dnf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="bEU-La-1N5"/>
+                <constraint firstItem="Bnv-ic-GSY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="cVg-Ls-1Le"/>
+                <constraint firstItem="U09-0I-Lvh" firstAttribute="centerY" secondItem="qve-dV-OLV" secondAttribute="centerY" id="fCj-Jx-V8O"/>
+                <constraint firstItem="Zho-Ss-S0a" firstAttribute="centerY" secondItem="qve-dV-OLV" secondAttribute="centerY" id="fh0-74-ogK"/>
+                <constraint firstItem="Gh9-XU-dnf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="gQ9-UE-FtY"/>
+                <constraint firstItem="U09-0I-Lvh" firstAttribute="leading" secondItem="Yo9-be-PKg" secondAttribute="trailing" id="iXS-qf-Kfi"/>
+                <constraint firstItem="Cmo-Hy-GDC" firstAttribute="centerY" secondItem="qve-dV-OLV" secondAttribute="centerY" id="k2e-ZI-KxL"/>
+                <constraint firstItem="qve-dV-OLV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="pP2-w1-Sn9"/>
+                <constraint firstItem="Yo9-be-PKg" firstAttribute="centerY" secondItem="qve-dV-OLV" secondAttribute="centerY" id="rqZ-H5-jNq"/>
+                <constraint firstItem="nxt-dd-Gv1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="zde-qg-LZ5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="authorLabel" destination="U09-0I-Lvh" id="RPe-8m-NYO"/>
+                <outlet property="contentView" destination="nxt-dd-Gv1" id="ahb-oP-YT8"/>
+                <outlet property="contentViewHeight" destination="1uj-SW-wgR" id="YEh-QP-VxN"/>
+                <outlet property="dateLabel" destination="Zho-Ss-S0a" id="qpx-Uh-Oyp"/>
+                <outlet property="descriptionLabel" destination="Bnv-ic-GSY" id="c0M-Xw-wMv"/>
+                <outlet property="sourceLabel" destination="Cmo-Hy-GDC" id="fOs-Kd-dND"/>
+                <outlet property="titleLabel" destination="Gh9-XU-dnf" id="mGb-Yy-wjx"/>
+            </connections>
+            <point key="canvasLocation" x="-281.5" y="-234.5"/>
+        </view>
+    </objects>
+</document>

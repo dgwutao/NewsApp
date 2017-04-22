@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHistoryTableViewHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA3-cC-V2I">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="4mV-tg-kcM"/>
+                        <constraint firstAttribute="height" constant="40" id="KFB-Kv-Tjv"/>
+                    </constraints>
+                    <state key="normal" image="ic_nav_search_del"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSY-sA-lMQ">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oSY-sA-lMQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Cdh-dP-GC7"/>
+                <constraint firstItem="jA3-cC-V2I" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Re8-uC-JF3"/>
+                <constraint firstAttribute="trailing" secondItem="jA3-cC-V2I" secondAttribute="trailing" id="tj8-g1-lG1"/>
+                <constraint firstItem="oSY-sA-lMQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vFr-mm-KJ0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clearButton" destination="jA3-cC-V2I" id="ZMM-rq-E4y"/>
+                <outlet property="searchheaderTitleLabel" destination="oSY-sA-lMQ" id="00u-Ws-F2k"/>
+            </connections>
+            <point key="canvasLocation" x="-275" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_nav_search_del" width="12" height="12"/>
+    </resources>
+</document>

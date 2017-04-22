@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8VP-AS-fiG">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbh-90-oQw">
+                    <subviews>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efB-dl-lFN">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Qoc-xX-NjO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="xSe-ue-sRG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="efB-dl-lFN" secondAttribute="trailing" id="J6c-8x-xFK"/>
+                        <constraint firstAttribute="height" constant="300" id="ZtT-ds-zwc"/>
+                        <constraint firstItem="efB-dl-lFN" firstAttribute="leading" secondItem="Zbh-90-oQw" secondAttribute="leading" id="fWY-c3-VJH"/>
+                        <constraint firstAttribute="bottom" secondItem="efB-dl-lFN" secondAttribute="bottom" id="pmn-xh-NmT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Zbh-90-oQw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FEP-B1-XTO"/>
+                <constraint firstAttribute="trailing" secondItem="8VP-AS-fiG" secondAttribute="trailing" id="Hi8-Aq-5wn"/>
+                <constraint firstItem="8VP-AS-fiG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IEZ-8Q-oDM"/>
+                <constraint firstAttribute="bottom" secondItem="8VP-AS-fiG" secondAttribute="bottom" id="eJ4-8x-fRN"/>
+                <constraint firstAttribute="bottom" secondItem="Zbh-90-oQw" secondAttribute="bottom" id="iib-8g-Iqp"/>
+                <constraint firstItem="8VP-AS-fiG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tCo-tO-tuc"/>
+                <constraint firstAttribute="trailing" secondItem="Zbh-90-oQw" secondAttribute="trailing" id="tOf-yp-5qt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="8VP-AS-fiG" id="MYD-Lb-cIV"/>
+                <outlet property="cancelButton" destination="efB-dl-lFN" id="CSQ-Iv-niS"/>
+                <outlet property="container" destination="Zbh-90-oQw" id="UHU-xj-U2Y"/>
+            </connections>
+            <point key="canvasLocation" x="-1141" y="98"/>
+        </view>
+    </objects>
+</document>

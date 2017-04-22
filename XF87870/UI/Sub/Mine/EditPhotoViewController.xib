@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditPhotoViewController">
+            <connections>
+                <outlet property="cancelButton" destination="VLX-oA-5ks" id="gLq-yM-V5z"/>
+                <outlet property="coverView" destination="wDJ-tI-nTa" id="aih-kY-MeV"/>
+                <outlet property="takeButton" destination="bbi-7p-2jr" id="xbq-y5-GHY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDJ-tI-nTa">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLX-oA-5ks">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="ksu-W9-bJa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-7p-2jr">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="选取">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="takeButtonTapped:" destination="-1" eventType="touchUpInside" id="Dlc-ic-2OW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.18823529411764706" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="VLX-oA-5ks" firstAttribute="leading" secondItem="wDJ-tI-nTa" secondAttribute="leading" constant="60" id="95r-Js-iGY"/>
+                        <constraint firstItem="VLX-oA-5ks" firstAttribute="centerY" secondItem="wDJ-tI-nTa" secondAttribute="centerY" id="D1O-2T-YEZ"/>
+                        <constraint firstItem="bbi-7p-2jr" firstAttribute="centerY" secondItem="wDJ-tI-nTa" secondAttribute="centerY" id="MC3-tI-oY0"/>
+                        <constraint firstAttribute="trailing" secondItem="bbi-7p-2jr" secondAttribute="trailing" constant="60" id="P6X-kz-8lT"/>
+                        <constraint firstAttribute="height" constant="60" id="qzP-ct-Tew"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wDJ-tI-nTa" secondAttribute="bottom" id="D2g-Qm-Iin"/>
+                <constraint firstAttribute="trailing" secondItem="wDJ-tI-nTa" secondAttribute="trailing" id="T1S-zx-Tgo"/>
+                <constraint firstItem="wDJ-tI-nTa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oKg-6r-urz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-319.5" y="65.5"/>
+        </view>
+    </objects>
+</document>

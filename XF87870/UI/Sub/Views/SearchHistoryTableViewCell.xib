@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchHistoryTableViewCellIdentifier" rowHeight="59" id="KGk-i7-Jjw" customClass="SearchHistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8E-2g-WoP">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-wH-afp">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="MIf-WB-S4J"/>
+                            <constraint firstAttribute="height" constant="40" id="uBL-CF-huJ"/>
+                        </constraints>
+                        <state key="normal" image="ic_nav_search_del"/>
+                        <connections>
+                            <action selector="searchHistoryButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sj0-yS-u1d"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="gVp-wH-afp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0OK-vu-vPJ"/>
+                    <constraint firstItem="G8E-2g-WoP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BUK-st-8Zc"/>
+                    <constraint firstAttribute="trailing" secondItem="gVp-wH-afp" secondAttribute="trailing" id="OOB-oO-IzZ"/>
+                    <constraint firstItem="G8E-2g-WoP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bOG-08-gcC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="searchHistoryButton" destination="gVp-wH-afp" id="pTD-gO-Lj2"/>
+                <outlet property="searchHistoryLabel" destination="G8E-2g-WoP" id="Cjh-Wl-8Lp"/>
+            </connections>
+            <point key="canvasLocation" x="-665" y="254"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_nav_search_del" width="12" height="12"/>
+    </resources>
+</document>

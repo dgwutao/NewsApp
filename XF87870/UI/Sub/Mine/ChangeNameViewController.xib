@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeNameViewController">
+            <connections>
+                <outlet property="cancelButton" destination="4Qr-OF-Ljl" id="8aF-Ce-q2c"/>
+                <outlet property="textField" destination="Ulq-Gf-ebL" id="WLG-vo-l6e"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1l-Fx-Ll6">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户昵称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ulq-Gf-ebL">
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                        </textField>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qr-OF-Ljl">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="tOg-ku-rSg"/>
+                            </constraints>
+                            <state key="normal" image="btn_login_ic_delete"/>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="ZzU-6z-hu6"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKQ-7F-ijs">
+                            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="PdE-Lg-kN8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ulq-Gf-ebL" firstAttribute="leading" secondItem="m1l-Fx-Ll6" secondAttribute="leading" constant="12" id="6bu-Ii-XFf"/>
+                        <constraint firstAttribute="trailing" secondItem="4Qr-OF-Ljl" secondAttribute="trailing" constant="15" id="D7z-AL-r7b"/>
+                        <constraint firstItem="4Qr-OF-Ljl" firstAttribute="centerY" secondItem="m1l-Fx-Ll6" secondAttribute="centerY" id="E23-1x-WzT"/>
+                        <constraint firstAttribute="trailing" secondItem="fKQ-7F-ijs" secondAttribute="trailing" id="Lr9-Nf-cg9"/>
+                        <constraint firstItem="Ulq-Gf-ebL" firstAttribute="centerY" secondItem="m1l-Fx-Ll6" secondAttribute="centerY" id="ahL-mI-FQZ"/>
+                        <constraint firstItem="fKQ-7F-ijs" firstAttribute="leading" secondItem="m1l-Fx-Ll6" secondAttribute="leading" id="bcM-5Y-yXw"/>
+                        <constraint firstItem="4Qr-OF-Ljl" firstAttribute="leading" secondItem="Ulq-Gf-ebL" secondAttribute="trailing" constant="10" id="ue9-9T-J8y"/>
+                        <constraint firstAttribute="height" constant="44" id="yRk-oE-EFJ"/>
+                        <constraint firstAttribute="bottom" secondItem="fKQ-7F-ijs" secondAttribute="bottom" id="z7J-YY-Zdp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="m1l-Fx-Ll6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cnw-kk-HGG"/>
+                <constraint firstAttribute="trailing" secondItem="m1l-Fx-Ll6" secondAttribute="trailing" id="a7n-3o-1eF"/>
+                <constraint firstItem="m1l-Fx-Ll6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eIf-ss-2T3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-284.5" y="56.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_login_ic_delete" width="16" height="16"/>
+    </resources>
+</document>

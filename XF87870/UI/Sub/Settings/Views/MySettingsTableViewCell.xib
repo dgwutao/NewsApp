@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySettingsTableViewCellIdentifier" rowHeight="51" id="KGk-i7-Jjw" customClass="MySettingsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sidebar_profile_into" translatesAutoresizingMaskIntoConstraints="NO" id="TB0-Pw-EC8"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xO-Cx-t16">
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Sek-f5-gch"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctK-h0-jxs">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="TB0-Pw-EC8" secondAttribute="trailing" constant="15" id="8BR-Dn-7eS"/>
+                    <constraint firstAttribute="trailing" secondItem="5xO-Cx-t16" secondAttribute="trailing" id="MTT-zO-jxH"/>
+                    <constraint firstAttribute="bottom" secondItem="5xO-Cx-t16" secondAttribute="bottom" id="YyH-KE-vSX"/>
+                    <constraint firstItem="5xO-Cx-t16" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d9X-2H-btk"/>
+                    <constraint firstItem="ctK-h0-jxs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="v2d-N8-gIE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="TB0-Pw-EC8" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="VmI-eS-7vw"/>
+                <constraint firstItem="ctK-h0-jxs" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="qRJ-eP-0Nh"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="ctK-h0-jxs" id="ULg-f1-uyI"/>
+            </connections>
+            <point key="canvasLocation" x="-292" y="-68.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_sidebar_profile_into" width="9" height="16"/>
+    </resources>
+</document>

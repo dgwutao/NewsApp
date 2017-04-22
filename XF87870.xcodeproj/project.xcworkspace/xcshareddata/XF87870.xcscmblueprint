@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ed31f43b-11ee-466a-9935-d9f8236cf0b0++5457",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ed31f43b-11ee-466a-9935-d9f8236cf0b0++5457" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ed31f43b-11ee-466a-9935-d9f8236cf0b0++5457" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D1D8AD69-ECBA-4CF6-A73C-54A81E0D2033",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ed31f43b-11ee-466a-9935-d9f8236cf0b0++5457" : "xf87870\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XF87870",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XF87870.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/172.16.16.67:3691",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ed31f43b-11ee-466a-9935-d9f8236cf0b0++5457"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/sjdklfjdslk\/xf87870.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ed31f43b-11ee-466a-9935-d9f8236cf0b0++5457"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactUsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_user_contact" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-3S-How">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="JWp-1i-dk1"/>
+                        <constraint firstAttribute="width" constant="158" id="Tre-3y-rfo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="需要支持以及意见反馈，请发送邮件至87870@xfmail.com" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE9-Df-olT">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vxV-3S-How" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="5sa-wD-7Jy"/>
+                <constraint firstItem="vxV-3S-How" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PJd-rK-ZRn"/>
+                <constraint firstItem="XE9-Df-olT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="Q7j-SH-nOX"/>
+                <constraint firstAttribute="trailing" secondItem="XE9-Df-olT" secondAttribute="trailing" constant="60" id="WEf-nR-3bE"/>
+                <constraint firstItem="XE9-Df-olT" firstAttribute="top" secondItem="vxV-3S-How" secondAttribute="bottom" constant="48" id="qxe-Jw-e1q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-213" y="8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_user_contact" width="158" height="158"/>
+    </resources>
+</document>

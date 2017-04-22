@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="28"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uig-fH-bxU">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_nav_search" translatesAutoresizingMaskIntoConstraints="NO" id="zly-e1-KsC">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="p3d-9h-3zd"/>
+                                <constraint firstAttribute="width" constant="18" id="xSj-by-S1K"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索新闻" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grA-7s-YrY">
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                        </textField>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RM-0b-dbA">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="1fr-1k-725"/>
+                                <constraint firstAttribute="height" constant="16" id="MkL-ab-STR"/>
+                            </constraints>
+                            <state key="normal" image="ic_find_search_clear"/>
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="bn2-I7-j2p"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2RM-0b-dbA" firstAttribute="centerY" secondItem="uig-fH-bxU" secondAttribute="centerY" id="3hx-fa-6Hn"/>
+                        <constraint firstItem="zly-e1-KsC" firstAttribute="leading" secondItem="uig-fH-bxU" secondAttribute="leading" constant="12" id="Lxp-Gc-RDy"/>
+                        <constraint firstItem="grA-7s-YrY" firstAttribute="top" secondItem="uig-fH-bxU" secondAttribute="top" id="NkS-dQ-09I"/>
+                        <constraint firstItem="zly-e1-KsC" firstAttribute="centerY" secondItem="uig-fH-bxU" secondAttribute="centerY" id="VjZ-oF-8uO"/>
+                        <constraint firstAttribute="trailing" secondItem="2RM-0b-dbA" secondAttribute="trailing" constant="18" id="bag-k0-BER"/>
+                        <constraint firstItem="grA-7s-YrY" firstAttribute="leading" secondItem="zly-e1-KsC" secondAttribute="trailing" constant="8" id="dBj-br-KsA"/>
+                        <constraint firstItem="2RM-0b-dbA" firstAttribute="leading" secondItem="grA-7s-YrY" secondAttribute="trailing" constant="10" id="oAx-0J-Tl8"/>
+                        <constraint firstAttribute="bottom" secondItem="grA-7s-YrY" secondAttribute="bottom" id="vJi-qd-aCE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uig-fH-bxU" secondAttribute="bottom" id="4X7-gO-imF"/>
+                <constraint firstAttribute="trailing" secondItem="uig-fH-bxU" secondAttribute="trailing" id="HgY-fN-GEF"/>
+                <constraint firstItem="uig-fH-bxU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kAX-aF-F5j"/>
+                <constraint firstItem="uig-fH-bxU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kHK-4s-VYD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="borderView" destination="uig-fH-bxU" id="Uye-Bh-pqX"/>
+                <outlet property="deleteButton" destination="2RM-0b-dbA" id="qeC-Re-amZ"/>
+                <outlet property="textField" destination="grA-7s-YrY" id="rrz-A0-F5n"/>
+            </connections>
+            <point key="canvasLocation" x="-357" y="77"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_find_search_clear" width="15" height="16"/>
+        <image name="pic_nav_search" width="16" height="16"/>
+    </resources>
+</document>
